@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <h2>Bilgi giriş alanlarıdır. Form komutuyla açılır, girişler input komutuyla yapılır</h2>
+    <h2>paragraf kullanmak daha düzenli form oluşturur,farklı type türleri kullanılır</h2>
+    <h2>name komutunu kullanmak şart olmasada daha sonraki faydalarından dolayı kullanımı iyidir.</h2>
+    <form action="">
+        <p> Ad :   <input type="text" name="name"> </p>
+        <p> Soyad: <input type="text" name="lastname"></p>
+        <p> Eposta  <input type="email" name="eposta"></p>
+        <p>Parola <input type="password" name="password"></p>
+        <p> Parolayı Hatırla <input type="checkbox" name="rememberpassword"></p>
+
+        <h3>Sadece tekbir seçim yapılması gereken alanlarda radio buton kullanılır ve name değeri aynı olur</h3>
+        <p> Cinsiyet : <br> Erkek <input type="radio" name="gender">
+                        Kadın <input type="radio" name="gender">
+        </p>
+        <p> Hobileriniz: <br>
+            Book <input type="checkbox" name="hobby" >
+            Movie <input type="checkbox" name="hobby" >
+            Walk <input type="checkbox" name="hobby" >
+        </p>
+        <p>
+            Doğum Yeriniz : <br>
+         <select name="Bornplace" >
+             <option >Afyon</option>
+             <option >Kütahya</option>
+             <option >İzmir</option>
+             <option >Manisa</option>
+             <option >Aydın</option>
+         </select>
+        </p>
+
+            <h3>multiple name ile birden fazla seçenek ctrl tuşuyla seçilebilir hale gelir</h3>
+        <p>
+            Yaşadığınız Şehirler : <br>
+         <select multiple name="Bornplace" >
+             <option >Afyon</option>
+             <option >Kütahya</option>
+             <option >İzmir</option>
+             <option >Manisa</option>
+             <option >Aydın</option>
+         </select>
+        </p>
+
+    </form>
+
+    <h3> bu konuda "input type" türlerini internetten diğerleri incelenebilir.</h3>
+    
+</body>
+</html>

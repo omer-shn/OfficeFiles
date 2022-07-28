@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListeFiyatları</title>
+</head>
+<body>
+
+    <h2>Table komutuyla oluşturulur. Önce başlıklar için Thead ve onun içinde tr açılır </h2>
+    <h2>Sonra ne kadar başlığımız varsa th kullanarak aralarına yazılır</h2>
+    <h2>Ardından tbody ve içinde tr açılır bu sefer td ler ile tablonun içeriği doldurulur.</h2>
+    <h2>tr ler başlık veya gövdenin içinde herzaman 2.sırada geliyor.sadece 3. sıra değişiyor.</h2>
+    <h2>oradada başlığın 3.sırası th dir ve  Gövdenin 3.sırası td dir.</h2>
+
+    <table  border="2" width="50%">
+
+<thead>
+    <tr>
+        <th>Araç Adı</th>
+        <th>Fiyatı</th>
+        <th>Açıklama</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr>
+   <td>x</td>
+    <td>100.000$</td>
+    <td rowspan="3">Açıklama</td>
+    </tr>
+    <tr>
+    <td>y</td>
+    <td>150.000$</td>
+    
+</tr>
+    <tr>
+      <td>z</td>
+      <td>200.000$</td>
+        
+    </tr>
+</tbody>
+</table>
+<br>
+
+<h3> Örnek 2</h3>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Ürün Adı</th>
+            <th>Miktar</th>
+            <th>Fiyat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Martı</td>
+            <td>4</td>
+            <td>25tl</td>
+        </tr>
+        <tr>
+            <td>Çalıkuşu</td>
+            <td>5</td>
+            <td>55tl</td>
+        </tr>
+        <tr>
+            <td>Kimya-ı Saadet</td>
+            <td>1</td>
+            <td>75tl</td>
+        </tr>
+        <tr>
+            <td>Short Words</td>
+            <td>10</td>
+            <td>10tl</td>
+        </tr>
+        <tr>
+            <td>Gerçek Tıp</td>
+            <td>3</td>
+            <td>60tl</td>
+        </tr>
+    </tbody>
+
+</table>
+
+    
+</body>
+</html>
