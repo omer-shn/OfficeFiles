@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+  <script> src = "jquery-3.6.0.nin.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3>Kurslarım</h3>
+    <ul id = "liste">
+        <li  class="item1">web developing zero to advanced</li>
+        <li>phyton <a href="#">Link2</a></li>
+        <li>Android & ios</li>
+    </ul>
+
+    <script>
+        console.log($("#liste"));  //oluşturulan liste seçildi, locate edildi
+        console.log($("h3")); // başlık seçildi
+        console.log($("ul")); // ul grubu seçildi
+        console.log($("li")); // tüm li grubu seçildi
+        console.log($(".item1")); //tek bir li seçildi
+        console.log($("a")); //tüm  linkler seçildi
+        console.log($("li a")); // li içindeki a, yani link seçildi
+        console.log($("#liste a"));// farklı bir yöntem ile liste içindeki a yani link seçildi
+
+    </script>
+</body>
+
+
+</html>
+
+
+<!-- seçim yapmak (locate) için yollar  -->
+<!--     id $("#container")    -->
+<!--     class $(".item")      -->
+<!--     element $("ul")       -->

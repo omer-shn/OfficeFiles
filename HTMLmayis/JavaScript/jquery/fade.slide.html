@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script> src = "jquery-3.6.0.nin.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <br> <br> <br>
+        <p>zero to advanced</p>
+        <img src="honey-bee.jpg" width="150px">
+    </div>
+
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle</button>
+    <br> <br>
+
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade out</button>
+    <button id="fadeto">Fade To</button>
+    <button id="toggle2">Toggle</button>
+
+
+    <script>
+        //resmi kaydırma yoluyla  gizleme ve gösterme 
+        $(document).ready(function () {
+
+            $("#slideup").click(function () {
+                $("div").slideUp(3000); //zaman seçimleri şart değildir
+            });
+        
+
+        $("#slidedown").click(function () {
+            $("div").slideDown(1000, function () {
+                alert("study as a bee")
+            });
+        })
+
+        $("#toggle").click(function () {   //yukarıdaki iki butonun (slideup & slidedown) işlevini toggle tekbaşına yapar
+            $("div").toggle("slow");
+        });
+
+        $("#fadein").click(function() {
+            $("div").fadeIn("slow");
+        });
+        $("#fadeout").click(function() {
+            $("div").fadeOut("slow");
+        });
+        $("#fadeto").click(function() {
+            $("div").fadeTo("slow",0.5);
+        });
+        $("#toggle2").click(function() {
+            $("div").toggle("slow");
+        });
+
+
+    });
+
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>

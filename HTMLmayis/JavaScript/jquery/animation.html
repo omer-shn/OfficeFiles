@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script> src = "jquery-3.6.0.nin.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        #box {
+            position: absolute;
+            top: 50px;
+            left: 10;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        #box1 {
+            position:absolute;
+            top: 50px;
+            left: 10;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+           
+        }
+
+        #box2 {
+            position:absolute;
+            top: 50px;
+            left: 10;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(43, 226, 119);
+           border-radius: 50%;
+           
+        }
+        #enes {
+            position:absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 200px;
+            color: crimson;
+            top: 50px;
+            left: 10;
+          
+           
+        }
+    </style>
+</head>
+
+<body>
+     <button id="animate" >Animasyon</button>
+     <div id="box2" >  </div>
+     <div id ="enes"><p>enes</p></div>
+
+     <div id="box" >  </div>
+     
+     <div id="box1" >  </div>
+     
+
+     
+
+
+    <script>
+       
+        $(document).ready(function(){
+            $("#animate").click(function(){
+                $("#box").animate(
+                    {
+                        left :"200px",
+                        width:"300px",
+                        height:"300px",
+                    },
+                    3000
+                )
+            });
+
+            $("#animate").click(function(){
+                $("#box1").animate(
+                    {
+                        left :"200px",
+                        width:"3px",
+                        height:"3px",
+                    },
+                    3000
+                )
+                $("#box").animate({top:"200px",width:"1px",height:"1px"},2000)//sonradan eklenen satır
+            });
+
+            $("#animate").click(function(){
+                $("#box2").animate(
+                    {
+                        
+                        left :"300px",
+                        width:"700px",
+                        height:"700px",
+                    },
+                    3000
+                )
+            });
+
+            $("#animate").click(function(){
+                $("#enes").animate(
+                    {
+                       left:"300px",
+                      
+                    },
+                    3000
+                )
+            });
+        })
+
+    </script>
+</body>
+
+
+</html>

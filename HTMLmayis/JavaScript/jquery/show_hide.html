@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+  <script> src = "jquery-3.6.0.nin.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+       
+        </style>
+</head>
+
+<body>
+
+    <p>zero to advanced</p>
+
+    <button id="hide" >Hide</button>
+    <button id="show" >Show</button>
+
+    <button id="toggle" >Toggle</button>
+  
+
+    <script>
+      //yazıyı gizleme ve gösterme 
+      $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide("slow"); //slow ve fast seçimleri şart değildir
+
+        });
+
+        $("#show").click(function(){
+            $("p").show(3000,function(){
+                alert("read the message")
+            }); //3 aniyede görünür
+        })
+
+        $("#toggle").click(function(){   //yukarıdaki iki butonun (hide & show) işlevini toggle tekbaşına yapar
+            $("p").toggle("fast");
+        })
+      });
+
+
+
+
+    
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+  <script> src = "jquery-3.6.0.nin.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            .highlight {background-color: gray; } 
+            .orange{background-color: orange;}
+        </style>
+</head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3  id="header">Kurslarım</h3>
+    <ul id = "liste">
+        <li  class="item1">web developing zero to advanced</li>
+        <li>phyton <a href="#">Link2</a></li>
+        <li>Android & ios</li>
+    </ul>
+
+    <img src="honey-bee.jpg" width="300">
+
+    <input id= "ad" type="text" placeholder ="Adınız">
+    <input id ="soyad" type="text" placeholder ="Soyadınız">
+    <button id="btnKayitOl" onclick="kayitOl();">Kayit Ol </button>
+
+    <script>
+      console.log ( $("h3").text()); //başlık consel e gelir
+      console.log($("ul li").text()); //ul nin içindeki li ler çağrıldı
+
+      $("h3").text("Udemy Kurslarım"); //Başlık değiştirildi
+
+      function kayitOl(){
+        var ad=$("#ad").val(); 
+        var soyad=$("#soyad").val();   //kullanıcının girdiği veriyi val komutu getirir
+        console.log(ad+" "+soyad+" "+"kursa kayıt oldu")
+
+        $("#ad").addClass("highlight") //yukarıdaki hglight class ıeklendi -satır 11 ve 12
+        $("#soyad").addClass("orange")  //burada removeClass vs daha fazla class işleme alınabilir
+
+        $("img").attr("width","400")
+      }
+
+    
+
+
+    </script>
+</body>
+
+
+</html>
